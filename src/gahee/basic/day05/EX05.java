@@ -19,7 +19,50 @@ public class EX05 {
 		int [] sampleArray = new int [10];
 		for ( int index = 1; index <= sampleArray.length; index++)
 		 sampleArray[index] = 3 * index;
-		
+		// 55.
+		// 가.
+		//int[] array = new int [10];
+		//
+		//for(int i = 1; i <= 10; ++i) {
+		//	System.out.print(i+" ");
+		//	}
+		//System.out.println();
+
+		/* 나.
+		int[] array2 = new int [10];
+
+		for(int i = 0; i < 21; i +=2) {
+			System.out.print(i+" ");
+			}
+		System.out.println();
+*/
+		/*
+		// 다.
+		int[] array3 = new int [10];
+		for(int i = 1; i < 101; i *=i) {
+			System.out.print(i+" ");
+			}
+
+		System.out.println();
+
+		// 라.
+		int[] array4 = new int [10];
+
+		for(int i = 0; i < 10; ++i) {
+			System.out.print(array4[i]+" ");
+			}
+		System.out.println();
+
+		// 마.
+		int[] array5 = new int [10];
+		for(int i = 1; i < 21; i +=2) {
+			System.out.print(i+" ");
+			}
+
+		System.out.println();
+		*/
+		// 56.
+		// 0 11 2 33 4 55 6 77 8 99
 	}
 
 }
