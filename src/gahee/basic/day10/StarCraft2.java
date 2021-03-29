@@ -1,10 +1,11 @@
-package gahee.basic.day09;
+package gahee.basic.day10;
 
 // 스타크래프트 테란 캐릭터 - Interface
-// 풀어보기
+// 풀이
 
 public class StarCraft2 {
     public static void main(String[] args) {
+        // 인터페이스 기반으로 스타크래프트의 유닛을 정의해봄
 
         SCV2 s = new SCV2();      // 객체 생성
 
@@ -31,10 +32,12 @@ public class StarCraft2 {
     }
 }
 
-interface terranInterface{
-        void attack();         // public 생략 가능
-        void move();
-        void specialAbility();
+// 추상클래스에서 정의했던 추상메서드를
+// 독립적인 코드로 분리함 -> 인터페이스
+interface terranInterface {
+    abstract public void attack();         // abstract public 생략 가능
+    void move();
+    void specialAbility();
 }
 
  class Unit2 {
@@ -69,8 +72,7 @@ class SCV2 extends Unit2 implements terranInterface {
     
     // 재정의 두가지 방법 printf, 변수쓰기
     @Override
-    public void attack() {
-        // sout ("융합절단기를 이용해서...")
+    public void attack() { // sout ("융합절단기를 이용해서...")
         // 추상메서드를 이용해서 부모클래스에 정의된 attack 메서드를 유닛에 맞게 재정의함
         System.out.printf(fmtattack, power);
     }
@@ -87,7 +89,6 @@ class SCV2 extends Unit2 implements terranInterface {
 }
 
 class Marine2 extends Unit2 implements terranInterface {
-
     // 출력 변수
     final String fmtattack = "가우스소총으로 공격중... 피해량은 %d입니다.\n ";
     final String fmtmove = "지정한 위치로 %.2f 속도로 이동중입니다.\n ";

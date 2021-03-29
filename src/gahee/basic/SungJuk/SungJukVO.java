@@ -2,13 +2,13 @@ package gahee.basic.SungJuk;
 
 public class SungJukVO {
     
-    private String name;
-    private int kor;
-    private int eng;
-    private int mat;
-    private int tot;
-    private double avg;
-    private char grd;
+    protected String name;
+    protected int kor;
+    protected int eng;
+    protected int mat;
+    protected int tot;
+    protected double avg;
+    protected char grd;
 
     // 생성자
     public SungJukVO(String name, int kor, int eng, int mat) {     // 4가지 변수만 생성자에 기재
