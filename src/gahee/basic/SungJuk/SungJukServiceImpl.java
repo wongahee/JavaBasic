@@ -53,10 +53,10 @@ public class SungJukServiceImpl implements SungJukService {
 
         switch ( (int)sj.getAvg() / 10 ) {
             case 10 : case 9 :  sj.setGrd('수'); break;
-            case 8 :  sj.setGrd('우'); break;
-            case 7 :  sj.setGrd('미'); break;
-            case 6 :  sj.setGrd('양'); break;
-            default:  sj.setGrd('가'); break;
+            case 8 : sj.setGrd('우'); break;
+            case 7 : sj.setGrd('미'); break;
+            case 6 : sj.setGrd('양'); break;
+            default: sj.setGrd('가'); break;
         }
     }
 
