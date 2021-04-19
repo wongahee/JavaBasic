@@ -1,6 +1,9 @@
 package gahee.basic.SungJuk;
 
-public class SungJukVO {
+import java.io.Serializable;
+
+// 직렬화를 지원하기 위해 Serializable 구현해서 정의해야함!
+public class SungJukVO implements Serializable {
     
     protected String name;
     protected int kor;
