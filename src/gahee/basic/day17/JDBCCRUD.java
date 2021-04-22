@@ -14,7 +14,7 @@ public class JDBCCRUD {
 
         // JDBC 접속정보
         String drv = "org.mariadb.jdbc.Driver";
-        String amz = "bigdata.cfss7vpoctox.ap-northeast-2.rds.amazonaws.com";
+        String amz = "";
         String url = "jdbc:mariadb://"+amz+":3306/playground";
         String usr = "playground";
         String pwd = "bigdata2020";
